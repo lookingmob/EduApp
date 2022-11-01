@@ -85,6 +85,8 @@ Gestion des avis
 Système de notifications 
 Favoriser un quiz
 communicaion entre enseignant et eleve 
+test psyco technique en collaboration avec d'autre plateforme
+importer et traiter les documents avec  camera
 ...
 
 
@@ -98,7 +100,7 @@ D. 3. Les livrables :
 L’hébergement de l’application sur App Store & Playstore 
 
 
-
+*****
 
 
 
