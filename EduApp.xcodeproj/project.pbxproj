@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6132BAAE291BA0B4002C74FC /* EduAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6132BAAD291BA0B4002C74FC /* EduAppApp.swift */; };
+		6132BAB0291BA0B4002C74FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6132BAAF291BA0B4002C74FC /* ContentView.swift */; };
+		6132BAB2291BA0B5002C74FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6132BAB1291BA0B5002C74FC /* Assets.xcassets */; };
+		6132BAB5291BA0B5002C74FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6132BAB4291BA0B5002C74FC /* Preview Assets.xcassets */; };
+		6132BAB7291BA0B5002C74FC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6132BAB6291BA0B5002C74FC /* Persistence.swift */; };
+		6132BABA291BA0B5002C74FC /* EduApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6132BAB8291BA0B5002C74FC /* EduApp.xcdatamodeld */; };
+		6132BAC4291BA0B5002C74FC /* EduAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6132BAC3291BA0B5002C74FC /* EduAppTests.swift */; };
+		6132BACE291BA0B5002C74FC /* EduAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6132BACD291BA0B5002C74FC /* EduAppUITests.swift */; };
+		6132BAD0291BA0B5002C74FC /* EduAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6132BACF291BA0B5002C74FC /* EduAppUITestsLaunchTests.swift */; };
+		6171B1A6291EAE7B0034E329 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6171B1A5291EAE7B0034E329 /* ViewController.swift */; };
+		6171B1A8291EAEB80034E329 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6171B1A7291EAEB80034E329 /* Storyboard.storyboard */; };
+		6171B1AA291EAF970034E329 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6171B1A9291EAF970034E329 /* WelcomeViewController.swift */; };
+		6171B1AC291EE95B0034E329 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6171B1AB291EE95B0034E329 /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6132BAC0291BA0B5002C74FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6132BAA2291BA0B4002C74FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6132BAA9291BA0B4002C74FC;
+			remoteInfo = EduApp;
+		};
+		6132BACA291BA0B5002C74FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6132BAA2291BA0B4002C74FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6132BAA9291BA0B4002C74FC;
+			remoteInfo = EduApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6132BAAA291BA0B4002C74FC /* EduApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EduApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6132BAAD291BA0B4002C74FC /* EduAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EduAppApp.swift; sourceTree = "<group>"; };
+		6132BAAF291BA0B4002C74FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6132BAB1291BA0B5002C74FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6132BAB4291BA0B5002C74FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6132BAB6291BA0B5002C74FC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		6132BAB9291BA0B5002C74FC /* EduApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EduApp.xcdatamodel; sourceTree = "<group>"; };
+		6132BABF291BA0B5002C74FC /* EduAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EduAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6132BAC3291BA0B5002C74FC /* EduAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EduAppTests.swift; sourceTree = "<group>"; };
+		6132BAC9291BA0B5002C74FC /* EduAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EduAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6132BACD291BA0B5002C74FC /* EduAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EduAppUITests.swift; sourceTree = "<group>"; };
+		6132BACF291BA0B5002C74FC /* EduAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EduAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6171B1A5291EAE7B0034E329 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6171B1A7291EAEB80034E329 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		6171B1A9291EAF970034E329 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		6171B1AB291EE95B0034E329 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6132BAA7291BA0B4002C74FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6132BABC291BA0B5002C74FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6132BAC6291BA0B5002C74FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6132BAA1291BA0B4002C74FC = {
+			isa = PBXGroup;
+			children = (
+				6132BAAC291BA0B4002C74FC /* EduApp */,
+				6132BAC2291BA0B5002C74FC /* EduAppTests */,
+				6132BACC291BA0B5002C74FC /* EduAppUITests */,
+				6132BAAB291BA0B4002C74FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6132BAAB291BA0B4002C74FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6132BAAA291BA0B4002C74FC /* EduApp.app */,
+				6132BABF291BA0B5002C74FC /* EduAppTests.xctest */,
+				6132BAC9291BA0B5002C74FC /* EduAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6132BAAC291BA0B4002C74FC /* EduApp */ = {
+			isa = PBXGroup;
+			children = (
+				6132BAAD291BA0B4002C74FC /* EduAppApp.swift */,
+				6132BAAF291BA0B4002C74FC /* ContentView.swift */,
+				6132BAB1291BA0B5002C74FC /* Assets.xcassets */,
+				6132BAB6291BA0B5002C74FC /* Persistence.swift */,
+				6132BAB8291BA0B5002C74FC /* EduApp.xcdatamodeld */,
+				6132BAB3291BA0B5002C74FC /* Preview Content */,
+				6171B1A5291EAE7B0034E329 /* ViewController.swift */,
+				6171B1A7291EAEB80034E329 /* Storyboard.storyboard */,
+				6171B1A9291EAF970034E329 /* WelcomeViewController.swift */,
+				6171B1AB291EE95B0034E329 /* LoginViewController.swift */,
+			);
+			path = EduApp;
+			sourceTree = "<group>";
+		};
+		6132BAB3291BA0B5002C74FC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6132BAB4291BA0B5002C74FC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6132BAC2291BA0B5002C74FC /* EduAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				6132BAC3291BA0B5002C74FC /* EduAppTests.swift */,
+			);
+			path = EduAppTests;
+			sourceTree = "<group>";
+		};
+		6132BACC291BA0B5002C74FC /* EduAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6132BACD291BA0B5002C74FC /* EduAppUITests.swift */,
+				6132BACF291BA0B5002C74FC /* EduAppUITestsLaunchTests.swift */,
+			);
+			path = EduAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6132BAA9291BA0B4002C74FC /* EduApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6132BAD3291BA0B5002C74FC /* Build configuration list for PBXNativeTarget "EduApp" */;
+			buildPhases = (
+				6132BAA6291BA0B4002C74FC /* Sources */,
+				6132BAA7291BA0B4002C74FC /* Frameworks */,
+				6132BAA8291BA0B4002C74FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EduApp;
+			productName = EduApp;
+			productReference = 6132BAAA291BA0B4002C74FC /* EduApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6132BABE291BA0B5002C74FC /* EduAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6132BAD6291BA0B5002C74FC /* Build configuration list for PBXNativeTarget "EduAppTests" */;
+			buildPhases = (
+				6132BABB291BA0B5002C74FC /* Sources */,
+				6132BABC291BA0B5002C74FC /* Frameworks */,
+				6132BABD291BA0B5002C74FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6132BAC1291BA0B5002C74FC /* PBXTargetDependency */,
+			);
+			name = EduAppTests;
+			productName = EduAppTests;
+			productReference = 6132BABF291BA0B5002C74FC /* EduAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6132BAC8291BA0B5002C74FC /* EduAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6132BAD9291BA0B5002C74FC /* Build configuration list for PBXNativeTarget "EduAppUITests" */;
+			buildPhases = (
+				6132BAC5291BA0B5002C74FC /* Sources */,
+				6132BAC6291BA0B5002C74FC /* Frameworks */,
+				6132BAC7291BA0B5002C74FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6132BACB291BA0B5002C74FC /* PBXTargetDependency */,
+			);
+			name = EduAppUITests;
+			productName = EduAppUITests;
+			productReference = 6132BAC9291BA0B5002C74FC /* EduAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6132BAA2291BA0B4002C74FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					6132BAA9291BA0B4002C74FC = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					6132BABE291BA0B5002C74FC = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 6132BAA9291BA0B4002C74FC;
+					};
+					6132BAC8291BA0B5002C74FC = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 6132BAA9291BA0B4002C74FC;
+					};
+				};
+			};
+			buildConfigurationList = 6132BAA5291BA0B4002C74FC /* Build configuration list for PBXProject "EduApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6132BAA1291BA0B4002C74FC;
+			productRefGroup = 6132BAAB291BA0B4002C74FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6132BAA9291BA0B4002C74FC /* EduApp */,
+				6132BABE291BA0B5002C74FC /* EduAppTests */,
+				6132BAC8291BA0B5002C74FC /* EduAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6132BAA8291BA0B4002C74FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6171B1A8291EAEB80034E329 /* Storyboard.storyboard in Resources */,
+				6132BAB5291BA0B5002C74FC /* Preview Assets.xcassets in Resources */,
+				6132BAB2291BA0B5002C74FC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6132BABD291BA0B5002C74FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6132BAC7291BA0B5002C74FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6132BAA6291BA0B4002C74FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6171B1AC291EE95B0034E329 /* LoginViewController.swift in Sources */,
+				6171B1A6291EAE7B0034E329 /* ViewController.swift in Sources */,
+				6132BAB7291BA0B5002C74FC /* Persistence.swift in Sources */,
+				6132BAB0291BA0B4002C74FC /* ContentView.swift in Sources */,
+				6171B1AA291EAF970034E329 /* WelcomeViewController.swift in Sources */,
+				6132BABA291BA0B5002C74FC /* EduApp.xcdatamodeld in Sources */,
+				6132BAAE291BA0B4002C74FC /* EduAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6132BABB291BA0B5002C74FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6132BAC4291BA0B5002C74FC /* EduAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6132BAC5291BA0B5002C74FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6132BACE291BA0B5002C74FC /* EduAppUITests.swift in Sources */,
+				6132BAD0291BA0B5002C74FC /* EduAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6132BAC1291BA0B5002C74FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6132BAA9291BA0B4002C74FC /* EduApp */;
+			targetProxy = 6132BAC0291BA0B5002C74FC /* PBXContainerItemProxy */;
+		};
+		6132BACB291BA0B5002C74FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6132BAA9291BA0B4002C74FC /* EduApp */;
+			targetProxy = 6132BACA291BA0B5002C74FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6132BAD1291BA0B5002C74FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6132BAD2291BA0B5002C74FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6132BAD4291BA0B5002C74FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EduApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lookingmob.EduApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6132BAD5291BA0B5002C74FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EduApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lookingmob.EduApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6132BAD7291BA0B5002C74FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lookingmob.EduAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EduApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EduApp";
+			};
+			name = Debug;
+		};
+		6132BAD8291BA0B5002C74FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lookingmob.EduAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EduApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EduApp";
+			};
+			name = Release;
+		};
+		6132BADA291BA0B5002C74FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lookingmob.EduAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EduApp;
+			};
+			name = Debug;
+		};
+		6132BADB291BA0B5002C74FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lookingmob.EduAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EduApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6132BAA5291BA0B4002C74FC /* Build configuration list for PBXProject "EduApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6132BAD1291BA0B5002C74FC /* Debug */,
+				6132BAD2291BA0B5002C74FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6132BAD3291BA0B5002C74FC /* Build configuration list for PBXNativeTarget "EduApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6132BAD4291BA0B5002C74FC /* Debug */,
+				6132BAD5291BA0B5002C74FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6132BAD6291BA0B5002C74FC /* Build configuration list for PBXNativeTarget "EduAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6132BAD7291BA0B5002C74FC /* Debug */,
+				6132BAD8291BA0B5002C74FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6132BAD9291BA0B5002C74FC /* Build configuration list for PBXNativeTarget "EduAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6132BADA291BA0B5002C74FC /* Debug */,
+				6132BADB291BA0B5002C74FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6132BAB8291BA0B5002C74FC /* EduApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6132BAB9291BA0B5002C74FC /* EduApp.xcdatamodel */,
+			);
+			currentVersion = 6132BAB9291BA0B5002C74FC /* EduApp.xcdatamodel */;
+			path = EduApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6132BAA2291BA0B4002C74FC /* Project object */;
+}
