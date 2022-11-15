@@ -1,0 +1,47 @@
+PODS:
+  - Alamofire (5.6.2)
+  - AlamofireImage (4.2.0):
+    - Alamofire (~> 5.4)
+  - ProgressHUD (13.6)
+  - RAMAnimatedTabBarController (5.2.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SideMenu (6.5.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - ProgressHUD
+  - RAMAnimatedTabBarController
+  - RxCocoa
+  - RxSwift
+  - SideMenu
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - ProgressHUD
+    - RAMAnimatedTabBarController
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SideMenu
+
+SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
+  ProgressHUD: 4bdaa0d2ddf676b23324b199f9facffb5c3a1620
+  RAMAnimatedTabBarController: 6863a386e7ae2ab227cd60aa73ab8ff56cdacfdd
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
+
+PODFILE CHECKSUM: e7ff082329575b3ff13aa77986f16ff5f50cd4f4
+
+COCOAPODS: 1.11.3
