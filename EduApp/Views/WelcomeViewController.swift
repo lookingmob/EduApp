@@ -18,7 +18,7 @@ class WelcomeViewController: UIViewController {
 //          .responseJSON{ (data) in
 //              print(data)
 //          }
-        let URL = "http://172.17.0.155:3000/user/"
+   //     let URL = "http://172.17.0.155:3000/user/"
 //
 //        AF.request(URL+"login",method: .post,parameters: ["email": "tirairiai@gmail.com","password" : "123456"],encoding: JSONEncoding.default)
 //          .validate()
@@ -33,7 +33,12 @@ class WelcomeViewController: UIViewController {
 //          }
         
        if( UserViewModel().profile())
-        {print("profile succes")}
+        {
+           print("profile succes")
+           print("--------------")
+           print(UserDefaults.standard.dictionaryRepresentation())
+           print("--------------")
+       }
         
     }
     

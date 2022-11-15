@@ -12,7 +12,6 @@ class SignInViewController: UIViewController {
     
     @IBAction func tnsubmit(_ sender: UIButton) {
         if UserViewModel().signIn(username:firstNameTF.text!,email:emailTF.text!,password:passwordTF.text!){
-//            show(LoginViewController(), sender: self)
             self.showToast(message: "user created", font: .systemFont(ofSize: 12.0))
         }
         else{

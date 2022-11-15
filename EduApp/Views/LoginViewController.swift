@@ -23,8 +23,9 @@ class LoginViewController: UIViewController {
         self.view.endEditing(false)
     }
     
-    @IBAction func btsubmit(_ sender: UIButton) {if(emailtf.text! != nil && passwordtf.text! != nil){
-        if (UserViewModel().login(email: emailtf.text!, password: passwordtf.text!)){present(ProfileViewController(), animated: false)
+    @IBAction func btsubmit(_ sender: UIButton) {if(emailtf.text! != "" && passwordtf.text! != ""){
+        if (UserViewModel().login(email: emailtf.text!, password: passwordtf.text!)){
+            present(ProfileViewController(), animated: false)
         }
     }
     }
