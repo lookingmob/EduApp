@@ -8,15 +8,16 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-    @IBAction func checkBoxBtnTapped(_ sender: UIButton) {
-            if checkBoxBtn.isSelected {
-                checkBoxBtn.setBackgroundImage(#imageLiteral(resourceName: "ic_signup_unchecked"), for: .normal)
-            } else {
-                checkBoxBtn.setBackgroundImage(#imageLiteral(resourceName: "ic_signup_checked"), for:.normal)
-            }
-            checkBoxBtn.isSelected = !checkBoxBtn.isSelected
-        }
+
+    @IBAction func loginApple(_ sender: UIButton) {
+    }
+    @IBOutlet weak var passwordLabel: UITextField!
+    @IBAction func googleLogin(_ sender: UIButton) {
+    }
     
+    @IBOutlet weak var submitBtn: UIButton!
+    @IBOutlet weak var pleaseverifieText: UILabel!
+    @IBOutlet weak var emailLabel: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
