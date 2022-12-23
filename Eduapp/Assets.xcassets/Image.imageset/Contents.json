@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "146-1468843_profile-icon-orange-png-transparent-png.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "146-1468843_profile-icon-orange-png-transparent-png 1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "146-1468843_profile-icon-orange-png-transparent-png 2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
