@@ -1,2 +1,84 @@
 
 "First name empty" = "nom est vide";
+//bookPickerView.swift
+"level 1" = "niveau 1";
+"level 2" = "niveau 2";
+"level 3" = "niveau 3";
+"level 4" = "niveau 4";
+"level 5" = "niveau 5";
+
+
+//  EndQuizoView.swift
+"Congratulations, you completed the quiz! 🥳" = "Félicitations, vous avez terminé le quiz ! 🥳";
+"You scored " = "tu as marqué ";
+
+// w QuestionUIView.swift zeda
+
+" out of " = "de";
+
+"Next" = "Suivant";
+
+//  QuizIntroSwiftUIView.swift
+"Are you ready to test out your trivia skills?" = "Êtes-vous prêt à tester vos compétences en matière de trivia ?";
+
+//  AddQuiz.swift
+"ADD QUIZ" = "AJOUTER UN CLUB";
+"Add your QUIZ " = "Ajoutez votre QUIZ";
+"write your quiz" = "écrivez votre quiz";
+"group" = "groupe";
+"answer correct" = "réponse correcte";
+
+//  BooksView.swift
+
+"Book Name" = "Nom du document";
+"Name" = "nom";
+"Author Name" = "Nom de l'auteur";
+"Add" = "Ajouter";
+
+// CartView.swift
+"Thanks for your purchase! You'll also receive an email confirmation shortly." = "Merci pour votre achat ! Vous recevrez également un e-mail de confirmation sous peu.";
+"Your cart total is" = "Le total de votre panier est de" ;
+"Your cart is empty." = "Votre panier est vide.";
+"My Cart" = "Mon panier";
+
+//ChooseUserViewController.swift
+
+"Error" = "Erreur";
+"Could not load utilisateurs " = "Impossible de charger les utilisateurs";
+
+//  ContentView.swift
+"Popular" = "Populaire";
+"book shop" = "librairie";
+
+//LoginViewController
+"Unavailable" = "Indisponible";
+"FaceID Auth not available" = "Authentification FaceID non disponible";
+"Dismiss" = "Rejeter";
+
+//  MainviewSwiftUI.swift
+
+"diffferent levels and languages" = "différents niveaux et langues";
+
+//  MessagerieViewCotroller.swift
+"Could not load conversations " = "Impossible de charger les conversations";
+
+//SignInViewController
+"First name empty" = "Prénom vide";
+"Surname empty" = "Nom vide";
+"Email empty" = "Email vide";
+"Invalid Email Address" = "Adresse e-mail invalide";
+"Password empty" = "Mot de passe vide";
+"Password must be at least 8 characters" = "Mot de passe doit être d'au moins 8 caractères";
+
+
+//  addbookView.swift
+
+"ADD DOCUMENT" = "AJOUTER UN DOCUMENT";
+"Add your Book " = "Ajoutez votre livre";
+"Title" = "Titre";
+"Degree" = "Degré";
+"degree" = "degré";
+"Author" = "Auteur";
+"Edition" = "Édition";
+"click again to change the cover" = "cliquez à nouveau pour changer la couverture";
+"ADD" = "AJOUTER";
