@@ -7,7 +7,7 @@ struct CartView: View {
     var body: some View {
         ScrollView {
             if cartManager.paymentSuccess {
-                Text("Thanks for your purchase! You'll get cozy in our comfy sweaters soon! You'll also receive an email confirmation shortly.")
+                Text(NSLocalizedString("Thanks for your purchase! You'll get cozy in our comfy sweaters soon! You'll also receive an email confirmation shortly.", comment: ""))
                     .padding()
             } else {
                 if cartManager.books.count > 0 {
@@ -16,7 +16,7 @@ struct CartView: View {
                     }
                     
                     HStack {
-                        Text("Your cart total is")
+                        Text(NSLocalizedString("Your cart total is", comment: ""))
                         Spacer()
                         Text("$\(cartManager.total).00")
                             .bold()
@@ -27,11 +27,11 @@ struct CartView: View {
                         .padding()
                     
                 } else {
-                    Text("Your cart is empty.")
+                    Text(NSLocalizedString("Your cart is empty.", comment: ""))
                 }
             }
         }
-        .navigationTitle(Text("My Cart"))
+        .navigationTitle(Text(NSLocalizedString("My Cart", comment: "")))
         .padding(.top)
         .onDisappear {
             if cartManager.paymentSuccess {

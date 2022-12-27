@@ -14,7 +14,7 @@ import FirebaseCore
 import FirebaseMessaging
 import UserNotifications
 
-        @main
+@main
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
  
     let gcmMessageIDKey = "gcm.message_id"

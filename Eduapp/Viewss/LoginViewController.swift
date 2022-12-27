@@ -22,18 +22,15 @@ class LoginViewController: UIViewController {
                     [weak self] success, authenticationError in
                     DispatchQueue.main.async {
                         guard success, error == nil else{
-                            //Authentication failed, prompt an error message to the
-                            //user
                             return
                         }
-                        //Authentication successful! Proceed to next app screen.
                         self?.performSegue(withIdentifier: "loginsegue", sender: nil)
                     }
                 }
             } else {
                 //No biometrics available
-                let alert = UIAlertController(title: "Unavailable", message: "FaceID Auth not available", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+                let alert = UIAlertController(title: NSLocalizedString("Unavailable", comment: ""), message:NSLocalizedString("FaceID Auth not available", comment: ""), preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("Dismiss", comment: ""), style: .cancel, handler: nil))
                 present(alert, animated: true)
             }
         }
@@ -48,53 +45,13 @@ class LoginViewController: UIViewController {
 //    let signInConfig = GIDConfiguration(clientID: "694053905588-i502s9hvn2ntmcbqb0k2q5ccv8k8kcp3.apps.googleusercontent.com")
     @IBOutlet weak var emailtf: UITextField!
     @IBAction func resetBtn(_ sender: UIButton) {
-        //  present(EmailResetPasswordViewController(), animated: true)
-//        AF.request("http://172.17.2.159:3000/quiz/",method: .get)
-//          .validate()
-//             .responseJSON{ apiResponse in
-//                 switch apiResponse.result{
-//                 case .success(_):
-//                     let apiDictionary = apiResponse.value as? [String:Any]
-//                     print("apiResponse --- \(apiDictionary)")
-//                     self.performSegue(withIdentifier: "resetpsd", sender: nil)
-//                 case .failure(_):
-//                     print("got an error")
-//                 }
-//
-//             }
         performSegue(withIdentifier: "resetpsd", sender: nil)
     }
-    //GIDSignIn.sharedInstance.signIn(with: signInConfig, presenting: self) { user, error in
-    // guard error == nil else { return }
     @IBAction func goolgleBtn(_ sender: UIButton) {
-        
-//        GIDSignIn.sharedInstance.signIn(with: signInConfig, presenting: self) { user, error in
-//            guard error == nil else { return }
-//            guard let user = user else { return }
-//
-//            let emailAddress = user.profile?.email
-//            let usernamg = user.profile?.name
-//            let usrfamilyname = user.profile?.familyName
-//            let img = user.profile?.imageURL(withDimension: 50)
-//         //   UserDefaults.standard.set("\(userID!)", forKey: "id")
-//            UserDefaults.standard.set("\(emailAddress!)", forKey: "email")
-//            UserDefaults.standard.set("\(usernamg!)", forKey: "username")
-//            UserDefaults.standard.set("\(img)", forKey: "picture")
-//
-//            print("*****--------*")
-//          //  print("\(img)")
-//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//            let mainTabBarController = storyboard.instantiateViewController(identifier: "mainTabBar")
-//
-//            // This is to get the SceneDelegate object from your view controller
-//            // then call the change root view controller function to change to main tab bar
-//
-//              (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
-//        }
         
         let context = LAContext()
         if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil){
-            context.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Authenticate to access the app", reply: {(success, error) in
+            context.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason: NSLocalizedString("Authenticate to access the app", comment: ""), reply: {(success, error) in
             if success
                 {
                 print("correct")
@@ -121,34 +78,12 @@ class LoginViewController: UIViewController {
       
         if let token = AccessToken.current,
            !token.isExpired {
-//            let token = token.tokenString
-//            let request = FBSDKLoginKit.GraphRequest(graphPath: "me",
-//                                                     parameters: ["fields" : "email , name"],
-//                                                     tokenString: token,
-//                                                     version: nil,
-//                                                     httpMethod: .get)
-//            request.start(completionHandler: {connection,
-//                result,
-//                error in print("\(result)")
-//            })                // User is logged in, do work such as go to next view controller.
         }else{
         
             btFacebook.permissions = ["public_profile", "email"]
             btFacebook.delegate = self
-               //     view.addSubview(btFacebook)
-
+   
         }
-        
-        
-        
-        
-//                if (AccessToken.current != nil) {
-//        //                // User is logged in, do work such as go to next view controller.
-//                    performSegue(withIdentifier: "home", sender: nil)
-//                    }
-//
-        // Extend the code sample from 6a. Add Facebook Login to Your Code
-        // Add to your viewDidLoad method:
    
         
     }
@@ -173,7 +108,7 @@ class LoginViewController: UIViewController {
                      , onSuccess: {self.navToView()}){
         (errorMessage) in
         print("pronto amigo hahaahah")
-            self.alertWithTitle(title: "invalid information", message: errorMessage, ViewController: self, toFocus:self.emailtf)
+            self.alertWithTitle(title: NSLocalizedString("invalid information", comment: ""), message: errorMessage, ViewController: self, toFocus:self.emailtf)
     }
     }
 
@@ -185,15 +120,10 @@ class LoginViewController: UIViewController {
  
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let mainTabBarController = storyboard.instantiateViewController(identifier: "mainTabBar")
-        
-        // This is to get the SceneDelegate object from your view controller
-        // then call the change root view controller function to change to main tab bar
         (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
         
     }
     func logInTo(uemail: String, upassword: String,onSuccess: @escaping() -> Void, onError: @escaping(_ errorMessage: String) -> Void) {
-        //affichage du progressBar
-        
         UserService().LogIn(email: uemail, password : upassword, onSuccess: {
             onSuccess()
         })
@@ -253,7 +183,7 @@ extension LoginViewController : LoginButtonDelegate{
                      print("The result dict[email] of fb profile::: \(email!)")
                     let userID = dict["id"] as? String
                     print("The result dict[id] of fb profile::: \(userID!)")
-            //            self.profileImage.image = UIImage(named: "profile")
+       
             let facebookProfileUrl = "https://graph.facebook.com/\(userID!)/picture?type=large"
             //UserDefaults.standard.set("\(registeuser.token)", forKey: "token")
             UserDefaults.standard.set("\(userID!)", forKey: "id")
@@ -267,5 +197,4 @@ extension LoginViewController : LoginButtonDelegate{
     func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
         print("logged out !!!")
     }
-    
 }

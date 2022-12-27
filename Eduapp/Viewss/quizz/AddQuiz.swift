@@ -32,15 +32,15 @@ struct AddQuiz: View {
     var body: some View {
         VStack{
             VStack{
-                PageTitle(title:"ADD CLUB").padding(10)
+                PageTitle(title:NSLocalizedString("ADD QUIZ", comment: "")).padding(10)
                 VStack(alignment: .leading, spacing:8){
                     ScrollView{
                         
                         VStack(alignment: .leading, spacing: 24){
                             
                             VStack(alignment: .leading, spacing: 8){
-                                Text("Add your QUIZ ").setStyle(size:15)
-                                Text("write your quiz").setStyle(size:14,color:.EduApp_DarkBlue)
+                                Text(NSLocalizedString("Add your QUIZ", comment: "")).setStyle(size:15)
+                                Text(NSLocalizedString("write your quiz", comment: "")).setStyle(size:14,color:.EduApp_DarkBlue)
                             }
                             ZStack{
                                 RoundedRectangle(cornerRadius:15).stroke(Color.black).cornerRadius(15)
@@ -56,7 +56,7 @@ struct AddQuiz: View {
                                 RoundedRectangle(cornerRadius:15).stroke(Color.black).cornerRadius(15)
                                 ZStack(alignment: .leading){
                                     if quizgroup.isEmpty {
-                                        Text("group").padding()
+                                        Text(NSLocalizedString("group", comment: "")).padding()
                                     }
                                     TextField("", text: $quizgroup ).padding()
                                 }
@@ -66,7 +66,7 @@ struct AddQuiz: View {
                                 RoundedRectangle(cornerRadius:15).stroke(Color.black).cornerRadius(15)
                                 ZStack(alignment: .leading){
                                     if reponsecorrectt.isEmpty {
-                                        Text("reponse correct").padding()
+                                        Text(NSLocalizedString("answer correct", comment: "")).padding()
                                     }
                                     TextField("", text: $reponsecorrectt ).padding()
                                 }
@@ -76,7 +76,7 @@ struct AddQuiz: View {
                                 RoundedRectangle(cornerRadius:15).stroke(Color.black).cornerRadius(15)
                                 ZStack(alignment: .leading){
                                     if reponse1.isEmpty {
-                                        Text("reponse 1").padding()
+                                        Text(NSLocalizedString("answer 1", comment: "")).padding()
                                     }
                                     TextField("", text: $reponse1 ).padding()
                                 }
@@ -86,7 +86,7 @@ struct AddQuiz: View {
                                 RoundedRectangle(cornerRadius:15).stroke(Color.black).cornerRadius(15)
                                 ZStack(alignment: .leading){
                                     if reponse2.isEmpty {
-                                        Text("reponse2").padding()
+                                        Text(NSLocalizedString("answer 2", comment: "")).padding()
                                     }
                                     TextField("", text: $reponse2 ).padding()
                                 }
@@ -96,7 +96,7 @@ struct AddQuiz: View {
                                 RoundedRectangle(cornerRadius:15).stroke(Color.black).cornerRadius(15)
                                 ZStack(alignment: .leading){
                                     if reponse3.isEmpty {
-                                        Text("reponse3").padding()
+                                        Text(NSLocalizedString("answer 3", comment: "")).padding()
                                     }
                                     TextField("", text: $reponse3 ).padding()
                                 }
@@ -108,7 +108,7 @@ struct AddQuiz: View {
                                 RoundedRectangle(cornerRadius:15).stroke(Color.EduApp_LightBlue).cornerRadius(15)
                                 ZStack(alignment: .leading){
                                     if description.isEmpty {
-                                        Text("Description...").setStyle(size:15,color:Color.Eduapp_grayhalfdegree.opacity(0.5)).padding([.leading,.bottom]).padding(4)
+                                        Text(NSLocalizedString("Diffeculty", comment: "")).setStyle(size:15,color:Color.Eduapp_grayhalfdegree.opacity(0.5)).padding([.leading,.bottom]).padding(4)
                                     }
                                     TextEditor(text: $description).padding().frame(height : 90)
                                 }
@@ -143,8 +143,7 @@ struct AddQuiz: View {
                                 }.frame(width:350,height: 200)
                                 if selectedImage != nil {
                                     HStack{
-                                        Text("click again to change the image")
-                                            .setStyle(color:.EduApp_LightG2).frame(alignment:.leading)
+                                        Text(NSLocalizedString("click again to change the image", comment: "")).setStyle(color:.EduApp_LightG2).frame(alignment:.leading)
                                         Spacer()
                                     }.frame(width:350)
                                 }
@@ -157,7 +156,7 @@ struct AddQuiz: View {
                          incorrectanswer2 : reponse2
                          ,incorrectanswer3 : reponse3
                         ,question : name,
-                         difeculty : description, text: "ADD QUIZ", immg: selectedImage)
+                         difeculty : description, text: NSLocalizedString("ADD QUIZ", comment: ""), immg: selectedImage)
             
                 
             }.frame(alignment: .leading).padding().sheet(isPresented: $showImagePicker)

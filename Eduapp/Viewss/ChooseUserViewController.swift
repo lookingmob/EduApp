@@ -25,19 +25,6 @@ class ChooseUserViewController: UIViewController, UITableViewDataSource, UITable
         let labelUsername = contentView?.viewWithTag(3) as! UILabel
         
         let utilisateur = utilisateurs[indexPath.row]
-        
-//        labelName.text = utilisateur.prenom! + " " + utilisateur.nom!
-//        labelUsername.text = "@" + utilisateur.username!
-//
-//        imageProfile.roundedGrayPhoto()
-//
-//        ImageLoader.shared.loadImage(
-//            identifier: utilisateur.idPhoto!,
-//            url: Consts.URL_IMAGE + utilisateur.idPhoto!,
-//            completion: { [] image in
-//                imageProfile.image = image
-//            })
-        
         return cell!
     }
     
@@ -72,8 +59,7 @@ class ChooseUserViewController: UIViewController, UITableViewDataSource, UITable
                 self.utilisateurs = utilisateursfromRep!
                 self.tableView.reloadData()
             }else {
-                self.present(Alert.makeAlert(titre: "Error", message: "Could not load utilisateurs "),animated: true)
-
+                self.present(Alert.makeAlert(titre: NSLocalizedString("Error", comment: ""), message: NSLocalizedString("Could not load utilisateurs ", comment: "")),animated: true)
             }
         }
     }

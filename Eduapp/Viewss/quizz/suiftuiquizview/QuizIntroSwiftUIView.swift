@@ -16,7 +16,7 @@ struct QuizIntroSwiftUIView: View {
                     Text("EduApp Quiz")
                         .lilacTitle()
                     
-                    Text("Are you ready to test out your trivia skills?")
+                    Text(NSLocalizedString("Are you ready to test out your trivia skills?", comment: ""))
                         .foregroundColor(Color(.systemGray))
                 }
                 
@@ -25,7 +25,7 @@ struct QuizIntroSwiftUIView: View {
                         .environmentObject(triviaManager)
                 }
             label: {
-                    PrimaryButton(text: "Let's go!")
+                    PrimaryButton(text: NSLocalizedString("Let's go!", comment: ""))
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)

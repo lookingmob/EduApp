@@ -177,7 +177,7 @@ func showToast(message : String, font: UIFont) {
         else if lastNameTF.text!.isEmpty
         {
             errors = true
-            message += "Surname empty"
+            message += NSLocalizedString("Surname empty", comment: "")
             alertWithTitle(title: title, message: message, ViewController: self, toFocus:self.lastNameTF)
 
             self.lastNameTF.becomeFirstResponder()
@@ -185,27 +185,27 @@ func showToast(message : String, font: UIFont) {
         else if emailTF.text!.isEmpty
         {
             errors = true
-            message += "Email empty"
+            message += NSLocalizedString("Email empty", comment: "")
             alertWithTitle(title: title, message: message, ViewController: self, toFocus:self.emailTF)
 
         }
         else if !isValidEmail(test: emailTF.text!)
         {
             errors = true
-            message += "Invalid Email Address"
+            message += NSLocalizedString("Invalid Email Address", comment: "")
             alertWithTitle(title: title, message: message, ViewController: self, toFocus:self.emailTF)
 
         }
         else if passwordTF.text!.isEmpty
         {
             errors = true
-            message += "Password empty"
+            message += NSLocalizedString("Password empty", comment: "")
             alertWithTitle(title: title, message: message, ViewController: self, toFocus:passwordTF)
         }
         else if (passwordTF.text!.utf16.count < 8 )
         {
             errors = true
-            message += "Password must be at least 8 characters"
+            message += NSLocalizedString("Password must be at least 8 characters", comment: "")
             alertWithTitle(title: title, message: message, ViewController: self, toFocus:self.passwordTF)
         }
 

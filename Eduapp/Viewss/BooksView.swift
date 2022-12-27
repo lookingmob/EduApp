@@ -35,14 +35,14 @@ struct BooksView: View {
                             VStack(alignment: .leading, spacing: 8){
                                 
                                 Spacer(minLength: 50)
-                                Text("Book Name")
+                                Text(NSLocalizedString("Book Name", comment: ""))
                             }
                             ZStack{
                                 Color.white.ignoresSafeArea()
                                 ZStack(alignment: .leading){
                                     
                                     if bookname.isEmpty {
-                                        Text("Name").padding()
+                                        Text(NSLocalizedString("Name", comment: "")).padding()
                                     }
                                     TextField("", text: $bookname ).extensionTextFieldView(roundedCornes: 20, startColor: .yellow)
                                 }
@@ -55,14 +55,14 @@ struct BooksView: View {
                                 VStack(alignment: .leading, spacing: 8){
                                     
                                     Spacer(minLength: 50)
-                                    Text("Auth Name")
+                                    Text(NSLocalizedString("Author Name", comment: ""))
                                 }
                                 ZStack{
                                     Color.white.ignoresSafeArea()
                                     ZStack(alignment: .leading){
                                         
                                         if authorname.isEmpty {
-                                            Text("Name").padding()
+                                            Text(NSLocalizedString("Author Name", comment: "")).padding()
                                         }
                                         TextField("", text: $authorname ).extensionTextFieldView(roundedCornes: 20, startColor: .yellow)
                                     }
@@ -74,14 +74,14 @@ struct BooksView: View {
                                 VStack(alignment: .leading, spacing: 8){
                                     
                                     Spacer(minLength: 50)
-                                    Text("Edition")
+                                    Text(NSLocalizedString("Edition", comment: ""))
                                 }
                                 ZStack{
                                     Color.white.ignoresSafeArea()
                                     ZStack(alignment: .leading){
                                         
                                         if edition.isEmpty {
-                                            Text("Name").padding()
+                                            Text(NSLocalizedString("Edition", comment: "")).padding()
                                         }
                                         TextField("", text: $edition ).extensionTextFieldView(roundedCornes: 20, startColor: .yellow)
                                     }
@@ -95,14 +95,14 @@ struct BooksView: View {
                             VStack(alignment: .leading, spacing: 8){
                                 
                                 Spacer(minLength: 50)
-                                Text("Select your class or degree")
+                                Text(NSLocalizedString("Select your class or degree", comment: ""))
                             }
                             ZStack{
                                 Color.white.ignoresSafeArea()
                                 ZStack(alignment: .leading){
                                     
                                     if degre.isEmpty {
-                                        Text("Name").padding()
+                                        Text(NSLocalizedString("Degree", comment: "")).padding()
                                     }
                                     TextField("", text: $degre ).extensionTextFieldView(roundedCornes: 20, startColor: .yellow)
                                 }

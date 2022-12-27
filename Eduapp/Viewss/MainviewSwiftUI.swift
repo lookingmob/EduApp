@@ -16,7 +16,7 @@ struct MainviewSwiftUI: View {
             Rectangle()
             .strokeBorder(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)), lineWidth: 1)
             //diffferent levels and languages
-            Text("diffferent levels and languages").font(.custom("Inter Medium", size: 13)).foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5))).multilineTextAlignment(.center)
+            Text(NSLocalizedString("diffferent levels and languages", comment:"" )).font(.custom("Inter Medium", size: 13)).foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5))).multilineTextAlignment(.center)
             //Available in iOS 14 only
             .textCase(.lowercase)
         }

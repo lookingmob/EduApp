@@ -107,26 +107,19 @@ struct ContentView: View {
 
                                         GridView(book: $booksviewmodel.books[item]).environmentObject(cartManager)
                                     
-                                    //  SearchRecentlyViewedItem1(recentlyViewed: booksviewmodel.bookList[item])
                                 }.padding(.trailing)
                                 
                             }
                             .onAppear(perform: {
                                 booksviewmodel.getAllBooks()
-                                // print( booksviewmodel.bookList)
                             })}
-                        //*/
-                        //
-                        
                         .padding([.horizontal,.top])
-                        
-                        
                         .padding(.vertical)
                     }
                 }
                 .background(Color.black.opacity(0.05).edgesIgnoringSafeArea(.all))
             }
-            .navigationTitle(Text("Book Shop"))
+            .navigationTitle(Text(NSLocalizedString("Book Shop", comment: "")))
             .toolbar {
                 NavigationLink {
                     CartView()
@@ -140,14 +133,10 @@ struct ContentView: View {
        
         
     }
-    
-    
-    ///
         struct GridView : View {
             @Binding var book : Book
             @State var isPressedButton:Bool = false
             @EnvironmentObject var cartManager: CartManager
-           // @StateObject var cartManager = CartManager()
             var columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
             
             var body: some View{
@@ -195,50 +184,21 @@ struct ContentView: View {
                                 
                                 //plus
                                 HStack(spacing: 10){
-                                    
-                                    //                                 ForEach(1...5,id: \.self){rating in
-                                    //                                    Image(systemName: "star.fill")
-                                    //                                 .foregroundColor(self.book.rating >= rating ? .yellow : .gray)
-                                    //                                     }                                    Spacer(minLength: 0)
-                                    //                                }
-                                    NavigationLink(destination:bookDetail(resto: book),isActive: $isPressedButton){
+                        NavigationLink(destination:bookDetail(resto: book),isActive: $isPressedButton){
                                         
                                         Button(action: {isPressedButton = true}, label: {
-                                            
-                                            Text("detailsbook")
-                                            
-                                                .fontWeight(.bold)
-                                            
-                                                .foregroundColor(.white)
-                                            
-                                                .padding(.vertical, 10)
-                                            
-                                                .padding(.horizontal, 100)
-                                            
-                                                .background(Color.red)
-                                            
-                                                .cornerRadius(10)
-                                            
-                                            
-                                            
-                                        })
-                                        
-                                    }
-                                    
-                                    
-                                }}
-                            
-                            
-                            
-                            
-                            
+                            Text(NSLocalizedString("detailsbook", comment: "")).fontWeight(.bold)
+                            .foregroundColor(.white)
+                            .padding(.vertical, 10)
+                             .padding(.horizontal, 100)
+                            .background(Color.red)
+                            .cornerRadius(10)
+})
                         }
-                        
+                        }
+                        }
+                        }
                     }
-                    
-                    
-                    
                 }}
-            
         }}
 

@@ -18,7 +18,7 @@ struct QuestionUIView: View {
                 
                 Spacer()
                 
-                Text("\(quizoService.index + 1) out of \(quizoService.length)")
+                Text("\(quizoService.index + 1) "+NSLocalizedString("out of", comment: "")+" \(quizoService.length)")
                     .foregroundColor(Color("EduApSeconRed"))
                     .fontWeight(.heavy)
             }
@@ -40,7 +40,7 @@ struct QuestionUIView: View {
             Button {
                 quizoService.goToNextQuestion()
             } label: {
-                PrimaryButton(text: "Next", background: quizoService.answerSelected ? Color("AccentColor") : Color(hue: 1.0, saturation: 0.0, brightness: 0.564, opacity: 0.327))
+                PrimaryButton(text: NSLocalizedString("Next", comment: ""), background: quizoService.answerSelected ? Color("AccentColor") : Color(hue: 1.0, saturation: 0.0, brightness: 0.564, opacity: 0.327))
             }
             .disabled(!quizoService.answerSelected)
             

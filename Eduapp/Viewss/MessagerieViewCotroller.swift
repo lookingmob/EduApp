@@ -34,49 +34,7 @@ class MessagerieView: UITableViewController,  ModalTransitionListener {
         
         let conversation = conversations[indexPath.row]
         let receiver = conversation.receiver
-//
-//        blockButton.addAction(UIAction(handler: { act in
-//            let reinitAct = UIAlertAction(title: "Ok", style: .default) {  [self] UIAlertAction in
-//                initialize()
-//            }
-//
-//            let alert = UIAlertController(title: "Block user", message: "You can block user, they won't apear in your list and won't be able to contact you", preferredStyle: .alert)
-//            let action1 = UIAlertAction(title: "Block", style: .destructive) { [self] UIAlertAction in
-//                let recepteurInner = conversations[indexPath.row].recepteur
-//                print("blocking ----")
-//                print(recepteurInner)
-//                print("-------------")
-//                UtilisateurViewModel.sharedInstance.blockUser(userToBlock: recepteur._id!) { success in
-//                    if success {
-//                        self.present(Alert.makeSingleActionAlert(titre: "Success", message: "User has been blocked", action: reinitAct),animated: true)
-//
-//                        var oldBlockedUsers = UserDefaults.standard.array(forKey: "blockedUsers")
-//                        oldBlockedUsers?.append(recepteurInner._id!)
-//                        UserDefaults.standard.set(oldBlockedUsers, forKey: "blockedUsers")
-//                    } else {
-//                        self.present(Alert.makeServerErrorAlert(), animated: true)
-//                    }
-//                }
-//            }
-//            let action2 = UIAlertAction(title: "Cancel", style: .cancel) { UIAlertAction in
-//
-//            }
-//            alert.addAction(action2)
-//            alert.addAction(action1)
-//            self.present(alert,animated: true)
-//
-//        }), for: .touchUpInside)
-        
         imageProfile.roundedGrayPhoto()
-        
-//        if (recepteur.idPhoto! != ""){
-//            ImageLoader.shared.loadImage(
-//                identifier: recepteur.idPhoto!,
-//                url: IMAGE_URL + recepteur.idPhoto!,
-//                completion: { [] image in
-//                    imageProfile.image = image
-//                })
-//        }
         
         
         labelUsername.text = receiver.username!
@@ -127,7 +85,7 @@ class MessagerieView: UITableViewController,  ModalTransitionListener {
                 
                 self.tableView.reloadData()
             }else {
-                self.present(Alert.makeAlert(titre: "Error", message: "Could not load conversations "),animated: true)
+                self.present(Alert.makeAlert(titre: "Error", message: NSLocalizedString("Could not load conversations", comment: "")),animated: true)
             }
         }
     }

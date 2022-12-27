@@ -38,7 +38,6 @@ struct addbookView: View {
                             }
                             HStack{
                                 VStack(alignment: .leading, spacing: 10){         VStack(alignment: .leading, spacing: 10){
-                                    //Spacer(minLength: 15)
                                     Text("Book Name")
                                 }
                                     

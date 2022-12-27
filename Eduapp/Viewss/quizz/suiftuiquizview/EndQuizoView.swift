@@ -12,19 +12,19 @@ struct EndQuizoView: View {
     var body: some View {
         if triviaManager.reachedEnd {
             VStack(spacing: 20) {
-                Text("Edu App Quiz")
+                Text(NSLocalizedString("Edu App Quiz", comment: ""))
                     .lilacTitle()
 
-                Text("Congratulations, you completed the quiz! 🥳")
+                Text(NSLocalizedString("Congratulations, you completed the quiz! 🥳", comment: ""))
                 
-                Text("You scored \(triviaManager.score) out of \(triviaManager.length)")
+                Text(NSLocalizedString("You scored", comment: "")+" \(triviaManager.score) "+NSLocalizedString("out of", comment: "")+" \(triviaManager.length)")
                 
                 Button {
                     Task.init {
                         await triviaManager.fetchQuiz()
                     }
                 } label: {
-                    PrimaryButton(text: "Play again")
+                    PrimaryButton(text: NSLocalizedString("Play again", comment: ""))
                 }
             }
             .foregroundColor(Color(.black))

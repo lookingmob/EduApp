@@ -211,12 +211,6 @@
 		615635FA29562EBB007569CC /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		615635FB29562EBB007569CC /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		615635FF2956338A007569CC /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		61563601295633B3007569CC /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
-		61563602295633B3007569CC /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		61563603295633CF007569CC /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
-		615636042956394C007569CC /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Main.strings; sourceTree = "<group>"; };
-		615636052956394C007569CC /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		6156360629563951007569CC /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6156EECA293A549700A1FFDA /* bookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bookViewModel.swift; sourceTree = "<group>"; };
 		6156EECE293A600900A1FFDA /* booksmodelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = booksmodelView.swift; sourceTree = "<group>"; };
 		61570539293E32DD00309246 /* booksModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = booksModels.swift; sourceTree = "<group>"; };
@@ -634,8 +628,6 @@
 				en,
 				Base,
 				fr,
-				de,
-				it,
 			);
 			mainGroup = 61A5197A292E85C600439AD3;
 			packageReferences = (
@@ -852,8 +844,6 @@
 			children = (
 				615635F829562EA4007569CC /* Base */,
 				615635FA29562EBB007569CC /* fr */,
-				61563601295633B3007569CC /* de */,
-				615636042956394C007569CC /* it */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -862,8 +852,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				615635FF2956338A007569CC /* fr */,
-				61563603295633CF007569CC /* de */,
-				6156360629563951007569CC /* it */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -873,8 +861,6 @@
 			children = (
 				61A51995292E85C700439AD3 /* Base */,
 				615635FB29562EBB007569CC /* fr */,
-				61563602295633B3007569CC /* de */,
-				615636052956394C007569CC /* it */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

@@ -16,6 +16,7 @@
 " out of " = "de";
 
 "Next" = "Suivant";
+"Let's go!" = "allons-y";
 
 //  QuizIntroSwiftUIView.swift
 "Are you ready to test out your trivia skills?" = "Êtes-vous prêt à tester vos compétences en matière de trivia ?";
@@ -26,15 +27,18 @@
 "write your quiz" = "écrivez votre quiz";
 "group" = "groupe";
 "answer correct" = "réponse correcte";
-
+"answer 1" = "reponse 1";
+"answer 2" = "reponse 2";
+"answer 3" = "reponse 3";
+"Diffeculty" = "difficulté";
+"click again to change the image" = "cliquez à nouveau pour changer l'image";
 //  BooksView.swift
 
 "Book Name" = "Nom du document";
 "Name" = "nom";
 "Author Name" = "Nom de l'auteur";
 "Add" = "Ajouter";
-
-// CartView.swift
+// CartView.swift done
 "Thanks for your purchase! You'll also receive an email confirmation shortly." = "Merci pour votre achat ! Vous recevrez également un e-mail de confirmation sous peu.";
 "Your cart total is" = "Le total de votre panier est de" ;
 "Your cart is empty." = "Votre panier est vide.";
@@ -48,16 +52,16 @@
 //  ContentView.swift
 "Popular" = "Populaire";
 "book shop" = "librairie";
+"detailsbook" = "detail livre";
 
 //LoginViewController
 "Unavailable" = "Indisponible";
 "FaceID Auth not available" = "Authentification FaceID non disponible";
 "Dismiss" = "Rejeter";
-
+"invalid information" = "information invalide";
+"Authenticate to access the app" = "Authentifiez-vous pour accéder à l'application";
 //  MainviewSwiftUI.swift
-
 "diffferent levels and languages" = "différents niveaux et langues";
-
 //  MessagerieViewCotroller.swift
 "Could not load conversations " = "Impossible de charger les conversations";
 
@@ -68,8 +72,6 @@
 "Invalid Email Address" = "Adresse e-mail invalide";
 "Password empty" = "Mot de passe vide";
 "Password must be at least 8 characters" = "Mot de passe doit être d'au moins 8 caractères";
-
-
 //  addbookView.swift
 
 "ADD DOCUMENT" = "AJOUTER UN DOCUMENT";
