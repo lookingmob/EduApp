@@ -16,18 +16,9 @@ class ResetPasswordViewController: UIViewController {
     
     
     @IBAction func resetPwd(_ sender: UIButton) {
-        /*
-         http//2345.126345.12.12:124/user/changePassword
-         {
-         "email": "islem.naffal-gmail.co"
-         "code" : "2423"
-         "password" : "1234567"
-         "newPassword" : "1234567"
-         }
-         
-         */
+      
         AF.request("http://172.17.2.159:3000/user/changePassword",method: .post,parameters: ["email": UserDefaults.standard.string(forKey: "verifyemail")!,"code" : codeTF.text!,
-                                                                                             "password": passwordTF.text!,
+"password": passwordTF.text!,
             "newPassword": passwordTF.text!
              ]
              ,encoding: JSONEncoding.default)

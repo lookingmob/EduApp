@@ -36,6 +36,7 @@ struct ScanerView: View {
             if let outputText = textPerpage?.joined(separator: "\n*").trimmingCharacters(in: .whitespacesAndNewlines){
                 let newScanData = ScanData(content: outputText)
                 self.texts.append(newScanData)
+                print(newScanData)
             }
             self.showScannerSheet = false
         })

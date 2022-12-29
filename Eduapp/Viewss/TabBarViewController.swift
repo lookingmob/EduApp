@@ -6,40 +6,16 @@
 //
 
 import UIKit
+import LocalAuthentication
 
 class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-//authenticate()
-        
+        super.viewDidLoad()        
         // Do any additional setup after loading the view.
     }
-//    func authenticate() {
-//        let context = LAContext()
-//        var error: NSError? = nil
-//        if        context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-//            let reason = "Identify yourself!"
-//            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics,
-//                                   localizedReason: reason) {
-//                [weak self] success, authenticationError in
-//                DispatchQueue.main.async {
-//                    guard success, error == nil else{
-//                        //Authentication failed, prompt an error message to the
-//                        //user
-//                        return
-//                    }
-//                    //Authentication successful! Proceed to next app screen.
-//                    self?.performSegue(withIdentifier: "loginsegue", sender: nil)
-//                }
-//            }
-//        } else {
-//            //No biometrics available
-//            let alert = UIAlertController(title: "Unavailable", message: "FaceID Auth not available", preferredStyle: .alert)
-//            alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
-//            present(alert, animated: true)
-//        }
-//    }
+    
+   
     
 
     /*

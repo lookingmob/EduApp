@@ -20,4 +20,5 @@ target 'Eduapp' do
   pod 'SwiftyJSON', '~> 4.0'
   pod 'MessageKit', '~> 3.3.0'
   pod 'FirebaseMessaging'
+  pod 'AppCenter'
 end

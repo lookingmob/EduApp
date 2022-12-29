@@ -13,6 +13,9 @@ import GoogleSignIn
 import FirebaseCore
 import FirebaseMessaging
 import UserNotifications
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
@@ -73,12 +76,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
           application.registerUserNotificationSettings(settings)
         }
         application.registerForRemoteNotifications()
+        AppCenter.start(withAppSecret: "d1e6a796-f415-4a76-b570-e134a27a3901", services:[
+          Analytics.self,
+          Crashes.self
+        ])
         return true
     }
- 
-              
- 
-    // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
@@ -87,9 +90,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     }
 
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any],
                      fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {

@@ -135,6 +135,7 @@
 		61ABED282938057400712D46 /* QuizService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ABED272938057400712D46 /* QuizService.swift */; };
 		61B1ABF8293ABB4500AB18BE /* QuizRessponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B1ABF7293ABB4500AB18BE /* QuizRessponse.swift */; };
 		61C51C9A2954DF21001786B6 /* ScanData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C51C992954DF21001786B6 /* ScanData.swift */; };
+		61D0D88B295E2BB500726CB2 /* BiometricViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D0D88A295E2BB500726CB2 /* BiometricViewController.swift */; };
 		61E94A7929549D2E00B9CD13 /* addbookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E94A7829549D2E00B9CD13 /* addbookView.swift */; };
 		61E94A7B2954AD4700B9CD13 /* PaymentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E94A7A2954AD4700B9CD13 /* PaymentButton.swift */; };
 		61E94A7D2954AFBC00B9CD13 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E94A7C2954AFBC00B9CD13 /* CartManager.swift */; };
@@ -280,6 +281,7 @@
 		61ABED272938057400712D46 /* QuizService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizService.swift; sourceTree = "<group>"; };
 		61B1ABF7293ABB4500AB18BE /* QuizRessponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizRessponse.swift; sourceTree = "<group>"; };
 		61C51C992954DF21001786B6 /* ScanData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanData.swift; sourceTree = "<group>"; };
+		61D0D88A295E2BB500726CB2 /* BiometricViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricViewController.swift; sourceTree = "<group>"; };
 		61E94A7829549D2E00B9CD13 /* addbookView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addbookView.swift; sourceTree = "<group>"; };
 		61E94A7A2954AD4700B9CD13 /* PaymentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButton.swift; sourceTree = "<group>"; };
 		61E94A7C2954AFBC00B9CD13 /* CartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
@@ -357,6 +359,7 @@
 				61330C9129520A5E001D70F4 /* bookbookSwiftUIView.swift */,
 				61330C8829520A5E001D70F4 /* bookaddbookViewController.swift */,
 				61AA0AD829485CC40094599B /* CUserTableViewController.swift */,
+				61D0D88A295E2BB500726CB2 /* BiometricViewController.swift */,
 			);
 			path = Viewss;
 			sourceTree = "<group>";
@@ -757,6 +760,7 @@
 				61A519C0292E867900439AD3 /* UserRegister.swift in Sources */,
 				61330CD229520B3D001D70F4 /* ChooseUserViewController.swift in Sources */,
 				61330CD029520B36001D70F4 /* ChatView.swift in Sources */,
+				61D0D88B295E2BB500726CB2 /* BiometricViewController.swift in Sources */,
 				61330CC729520B15001D70F4 /* QuizListViewController.swift in Sources */,
 				61330CC429520B0D001D70F4 /* MainviewSwiftUI.swift in Sources */,
 				610C774A2954EF1400A4A5CA /* MapView.swift in Sources */,

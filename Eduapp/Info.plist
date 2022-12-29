@@ -2,8 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key></key>
-	<string></string>
+	<key>NSCameraUsageDescription</key>
+	<string>access camera</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>please allow access to libaries</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -16,7 +18,9 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
-			<array/>
+			<array>
+				<string>com.googleusercontent.apps.694053905588-i502s9hvn2ntmcbqb0k2q5ccv8k8kcp3</string>
+			</array>
 		</dict>
 	</array>
 	<key>FacebookAppID</key>
