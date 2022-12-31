@@ -28,7 +28,7 @@ class ImageViewController: UIViewController, UIImagePickerControllerDelegate, UI
         let randomID = UUID.init().uuidString
         uploadImage(imgData: imageData, imageName: "\(randomID).jpg")
         print("\(randomID).jpg")
-        UserDefaults.standard.set("http://172.17.2.159:3000/user/upload/\(randomID).jpg", forKey: "picture")
+        UserDefaults.standard.set("http://172.17.1.81:3000/user/upload/\(randomID).jpg", forKey: "picture")
 
     }
     override func viewDidLoad() {
@@ -45,7 +45,7 @@ class ImageViewController: UIViewController, UIImagePickerControllerDelegate, UI
        AF.upload(multipartFormData: { multiPart in
            
            multiPart.append(imgData, withName: "upload",fileName: imageName,mimeType: "image/*")
-       }, to: "http://172.17.2.159:3000/uploads",headers: []).responseJSON { apiResponse in
+       }, to: "http://172.17.1.81:3000/uploads",headers: []).responseJSON { apiResponse in
            
            switch apiResponse.result{
            case .success(_):

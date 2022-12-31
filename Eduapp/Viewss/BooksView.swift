@@ -51,11 +51,9 @@ struct BooksView: View {
                         }
                         HStack{
                             VStack(alignment: .leading, spacing: 24){
-                                
                                 VStack(alignment: .leading, spacing: 8){
-                                    
                                     Spacer(minLength: 50)
-                                    Text(NSLocalizedString("Author Name", comment: ""))
+                                        Text(NSLocalizedString("Author Name", comment: ""))
                                 }
                                 ZStack{
                                     Color.white.ignoresSafeArea()
@@ -147,7 +145,7 @@ struct BooksView: View {
                         }
                         HStack{
                             Button("Add") {
-                                 AF.request("http://172.17.2.159:3000/book/addbook",method: .post,parameters: ["bookname": bookname,"authname" : authorname,"edition":edition,"degre" : degre],encoding: JSONEncoding.default)
+                                 AF.request("http://172.17.1.81:3000/book/addbook",method: .post,parameters: ["bookname": bookname,"authname" : authorname,"edition":edition,"degre" : degre],encoding: JSONEncoding.default)
                                          .validate()
                                          .responseJSON{ (data) in
                                              print(data)

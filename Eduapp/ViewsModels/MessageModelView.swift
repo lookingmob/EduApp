@@ -64,7 +64,7 @@ public class MessagerieViewModel: ObservableObject{
                 }
             }
     }
-    //"/chat/my-messages/63961ed3de7389f437a77f2c"
+    //"/chat/my-messages/63961ed    3de7389f437a77f2c"
     func recupererMesMessages(idConversation: String, completed: @escaping (Bool, [Message]?) -> Void ) {
         AF.request(Consts.URLchat + "my-messages/\(idConversation)",
                    method: .get,

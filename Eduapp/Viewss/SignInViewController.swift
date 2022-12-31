@@ -22,7 +22,7 @@ class SignInViewController: UIViewController ,UITextFieldDelegate {
 //                self.alertWithTitle(title: "invalid information", message: errorMessage, ViewController: self, toFocus:self.firstNameTF)
 //
 //            }
-//            AF.request("http://172.17.2.159:3000/user/register",method: .post,parameters: ["username": "userusername","email": "ag.gharbiz7@gmail.com","password" : "123456789"],encoding: JSONEncoding.default)
+//            AF.request("http://172.17.1.81:3000/user/register",method: .post,parameters: ["username": "userusername","email": "ag.gharbiz7@gmail.com","password" : "123456789"],encoding: JSONEncoding.default)
 //                .validate()
 //                .responseDecodable(of: RegisterResponseUser.self) { (response) in
 //                    guard let registeuser = response.value else {
@@ -120,7 +120,7 @@ class SignInViewController: UIViewController ,UITextFieldDelegate {
     }
         func RegisterTo(username: String ,uemail: String, upassword: String,onSuccess: @escaping() -> Void, onError: @escaping(_ errorMessage: String) -> Void) {
         //affichage du progressBar
-            let URL = "http://172.17.2.159:3000/user/"
+            let URL = "http://172.17.1.81:3000/user/"
         UserService().SignIn(userusername: username, useremail: uemail, userpassword: upassword, onSuccess: {
             onSuccess()
         })

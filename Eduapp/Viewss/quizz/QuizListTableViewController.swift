@@ -51,7 +51,7 @@ class QuizListTableViewController: UITableViewController {
           }
         }
         print("-------")
-//        AF.request("http://172.17.2.159:3000/quiz/",method: .get)
+//        AF.request("http://172.17.1.81:3000/quiz/",method: .get)
 //          .validate()
 ////             .responseJSON{ (data) in
 ////                 print(data)

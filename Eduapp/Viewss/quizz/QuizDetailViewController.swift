@@ -33,7 +33,7 @@ class QuizDetailViewController: UIViewController {
        // questionlb.text = QuizConsts.question
     }
        @IBAction func deletequizsubmit(_ sender: Any) {
-       AF.request("http://172.17.2.159:3000/quiz/\(id)",method: .delete)
+       AF.request("http://172.17.1.81:3000/quiz/\(id)",method: .delete)
             .validate()
             .responseJSON { apiResponse in
                 

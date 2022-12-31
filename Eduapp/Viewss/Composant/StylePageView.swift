@@ -51,7 +51,7 @@ struct BtnStyle : View {
                             }
                         }
                 multiPart.append(imageData, withName: "image",fileName: "imageName.jpg",mimeType: "image/*")
-            }, to: "http://172.17.2.159:3000/quiz/addo",headers: []).responseJSON { apiResponse in
+            }, to: "http://172.17.1.81:3000/quiz/addo",headers: []).responseJSON { apiResponse in
                 
                 switch apiResponse.result{
                 case .success(_):
@@ -68,7 +68,7 @@ struct BtnStyle : View {
                     print("got an error")
                 }
             }
-//            AF.request("http://172.17.2.159:3000/quiz/addquiz",method: .post,parameters: ["category": category,"correctanswer" : correctanswer,"incorrectanswer1":incorrectanswer1,"incorrectanswer2":incorrectanswer2 ,"incorrectanswer3":incorrectanswer3,"question":question,"difficulity" : difeculty],encoding: JSONEncoding.default)
+//            AF.request("http://172.17.1.81:3000/quiz/addquiz",method: .post,parameters: ["category": category,"correctanswer" : correctanswer,"incorrectanswer1":incorrectanswer1,"incorrectanswer2":incorrectanswer2 ,"incorrectanswer3":incorrectanswer3,"question":question,"difficulity" : difeculty],encoding: JSONEncoding.default)
 //                    .validate()
 //                    .responseJSON{ (data) in
 //                        print(data)

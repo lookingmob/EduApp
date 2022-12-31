@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="ZMF-S2-N2y">
             <objects>
-                <viewController storyboardIdentifier="Welcome" modalPresentationStyle="fullScreen" id="W0N-Mm-sdx" customClass="ViewController" customModule="Eduapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Welcome" modalPresentationStyle="fullScreen" id="W0N-Mm-sdx" customClass="WelcomeViewController" customModule="Eduapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yi1-f5-NxY">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -438,11 +438,11 @@
             <objects>
                 <viewController modalPresentationStyle="currentContext" id="Y6W-OH-hqX" customClass="SignInViewController" customModule="Eduapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFit" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="yEX-X9-ymw">
-                                <rect key="frame" x="0.0" y="59" width="393" height="724"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WaF-yx-oNy">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="800"/>
@@ -2406,8 +2406,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="z6Y-eF-lyq"/>
-        <segue reference="4TD-Oz-AP3"/>
+        <segue reference="NMG-AC-4Ct"/>
+        <segue reference="7oX-Kx-weU"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="4841115" width="2000" height="2000"/>

@@ -6,12 +6,12 @@ import Alamofire
 class UserService{
     
   //  static let shared = UserService()
-   // static var URL =  "http://172.17.2.159:3000/user/"
+   // static var URL =  "http://172.17.1.81:3000/user/"
 
         
     func SignIn(userusername:String,useremail:String,userpassword:String, onSuccess: @escaping() -> Void, onError: @escaping(_ errorMessage: String) -> Void)    {
-    let URL =  "http://172.17.2.159:3000/user/"
-        AF.request("http://172.17.2.159:3000/user/register",method: .post,parameters: ["username": userusername,"email": useremail,"password" : userpassword],encoding: JSONEncoding.default)
+    let URL =  "http://172.17.1.81:3000/user/"
+        AF.request("http://172.17.1.81:3000/user/register",method: .post,parameters: ["username": userusername,"email": useremail,"password" : userpassword],encoding: JSONEncoding.default)
             .validate()
             .responseDecodable(of: RegisterResponseUser.self) { (response) in
                 guard let registeuser = response.value else {
@@ -33,7 +33,7 @@ class UserService{
     
     func LogIn(email :String, password: String, onSuccess: @escaping() -> Void, onError: @escaping(_ errorMessage: String) -> Void)
     {
-        let URL =  "http://172.17.2.159:3000/user/"
+        let URL =  "http://172.17.1.81:3000/user/"
         
         var yo = ""
         AF.request(Consts.URLuser+"login",method: .post,parameters: ["email": email,"password" : password],encoding: JSONEncoding.default)
@@ -80,7 +80,7 @@ class UserService{
   
     
     func changepassword(password:String,newpassword:String) -> Bool
-    {        let URL = "http://172.17.2.159:3000/user/"
+    {        let URL = "http://172.17.1.81:3000/user/"
         var useid = UserDefaults.standard.string(forKey: "id")!
         print(useid)
         var yo = false
@@ -94,7 +94,7 @@ class UserService{
         return yo
     }
     func sendMail(email:String) -> Int {
-        let URL = "http://172.17.2.159:3000/user/"
+        let URL = "http://172.17.1.81:3000/user/"
         var yo : Int = 0
         AF.request(URL+"reset",method: .post,parameters: ["email": email],encoding: JSONEncoding.default)
             .validate()
@@ -106,7 +106,7 @@ class UserService{
     }
     
     func changePass(email:String, codeot: String, newpassword: String){
-        let URL = "http://172.17.2.159:3000/user/"
+        let URL = "http://172.17.1.81:3000/user/"
         var yo :Int
          AF.request(URL+"changePassword",method: .post,parameters: ["email": email,"code": codeot,"newPassword": newpassword],encoding: JSONEncoding.default)
              .validate()

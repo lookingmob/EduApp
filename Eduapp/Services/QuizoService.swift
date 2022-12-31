@@ -29,7 +29,7 @@ class QuizoService: ObservableObject {
     
     // Asynchronous HTTP request to get the trivia questions and answers
     func fetchQuiz() async {
-        guard let url = URL(string: "http://172.17.2.159:3000/quiz/") else { fatalError("Missing URL") }
+        guard let url = URL(string: "http://172.17.1.81:3000/quiz/") else { fatalError("Missing URL") }
         
         let urlRequest = URLRequest(url: url)
         

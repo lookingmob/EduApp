@@ -18,7 +18,7 @@ class QuizService{
 
       private init() {
          //  URL = "https://www.googleapis.com/books/v1/volumes?q=harry+potter"
- //       URL = "http://172.17.2.159:3000/quiz/"
+ //       URL = "http://172.17.1.81:3000/quiz/"
        }
        func getQuizs(){
 //        var observer = [String : Dictionary<String,Dictionary<String,String>>]()

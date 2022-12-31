@@ -13,13 +13,13 @@ class bookserviicee{
 
       private init() {
          //  URL = "https://www.googleapis.com/books/v1/volumes?q=harry+potter"
-        URL = "http://172.17.2.159:3000/book/"
+        URL = "http://172.17.1.81:3000/book/"
        }
        func getbooks(){
 //        var observer = [String : Dictionary<String,Dictionary<String,String>>]()
         var obs = [String : Dictionary<String,String>] ()
         var dys = [String : String] ()
-           AF.request("http://172.17.2.159:3000/book/",method: .get)
+           AF.request("http://172.17.1.81:3000/book/",method: .get)
              .validate()
 //             .responseJSON{ (data) in
 //                 print(data)

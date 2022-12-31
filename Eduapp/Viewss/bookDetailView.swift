@@ -7,15 +7,18 @@ struct bookDetail: View {
 
  
     @ObservedObject var booksviewmodel = bookViewModel()
-
+    @ObservedObject var ratingviewmodel = RatingModelView()
 @State var resto : Book
 
     @State var heart = "heart.fill"
 
     @State var isPressedButton :Bool=false
-
+    @State private var showingPopover = false
     var placeHolder = "Test it"
 
+    @State var selected = -1
+
+    @State var numberOfStars :Int = 5
     var body: some View {
 
             VStack {
@@ -136,8 +139,82 @@ struct bookDetail: View {
                         }
 
                         
+//rating
+                        HStack(spacing: 10){
 
-                        
+                                                    
+
+                                                    ForEach(1..<6){_ in
+
+                                                        
+
+                                                        Image(systemName: "star.fill")
+
+                                                            .foregroundColor(.yellow)
+
+                                                    }
+
+                                                    
+
+                                                    Spacer()
+
+                                                    Button("Rate Here"){
+
+                                                        showingPopover=true
+
+                                                    }
+
+                                                    .popover(isPresented: $showingPopover){
+
+                                                        VStack{
+
+                                                            if (self.selected != -1) {
+
+                                                                
+
+                                                            }
+
+                                                            HStack(spacing:10,content:{
+
+                                                                ForEach(1..<6){i in
+
+                                                                    Image(systemName: "star.fill").resizable().frame(width: 30,height: 30).foregroundColor(self.selected >= i ? .yellow : .gray).onTapGesture {
+
+                                                                        self.selected = i
+
+                                                                        self.numberOfStars=i
+
+                                                                    }
+
+                                                                }
+
+                                                                Button("Add Rating",action: {
+
+                                                                    ratingviewmodel.AddRate(idUser: "63aee60f474f9d9c423fd7e6",     idBook:  resto.id, rating: self.numberOfStars)
+
+                                                                    
+
+                                                                    
+
+
+
+                                                                 })
+
+                                                            })
+
+                                                        }
+
+                                                    }
+
+                                                        .multilineTextAlignment(.leading)
+
+                                                        .foregroundColor(Color(#colorLiteral(red: 0.9580881, green: 0.10593573, blue: 0.3403331637, alpha: 1)))
+
+                                                        .padding(.trailing, 20)
+
+                                                }
+                       
+               //endrating
 
                         Text("Description")
 

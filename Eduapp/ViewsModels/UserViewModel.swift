@@ -5,7 +5,7 @@ import Alamofire
 class UserViewModel: ObservableObject{
     
     static let sharedInstance = UserViewModel()
-//    let URL = "http://172.17.2.159:3000/user/"
+//    let URL = "http://172.17.1.81:3000/user/"
 //    func signIn(username:String,email:String,password:String) -> Bool {
 //      UserService().SignIn(urlStr: URL, userusername: username, useremail: email, userpassword: password, onSuccess: {
 //          onSuccess()

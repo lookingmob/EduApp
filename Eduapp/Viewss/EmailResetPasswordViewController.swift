@@ -33,7 +33,7 @@ class EmailResetPasswordViewController: UIViewController {
             //  methode post
             //{"email " : "hamza.bouzidi@esprit.tn"}
             
-            AF.request("http://172.17.2.159:3000/user/reset",method: .post,parameters: [
+            AF.request("http://172.17.1.81:3000/user/reset",method: .post,parameters: [
                 "email": emailTf.text!
             ]
                        ,encoding: JSONEncoding.default)

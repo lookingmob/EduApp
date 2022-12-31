@@ -28,7 +28,7 @@ class bookViewModel : ObservableObject{
      func getAllBooks(complited: @escaping(Bool, [Book]?) -> Void) {
      
      
-     AF.request("http://172.17.2.159:3000/book/" , method: .get ,encoding: JSONEncoding.default)
+     AF.request("http://172.17.1.81:3000/book/" , method: .get ,encoding: JSONEncoding.default)
      .validate(statusCode: 200..<500)
      .validate(contentType: ["application/json"])
      .responseData {
@@ -62,7 +62,7 @@ class bookViewModel : ObservableObject{
     
     func getAllBooks(){
         
-        guard let url = URL(string:"http://172.17.2.159:3000/book/") else {
+        guard let url = URL(string:"http://172.17.1.81:3000/book/") else {
             
             print("not found")
             
@@ -134,7 +134,7 @@ class bookViewModel : ObservableObject{
     
     func getBook(){
         
-        guard let url = URL(string:"http://172.17.2.159:3000/book/detailsbook") else {
+        guard let url = URL(string:"http://172.171.81:3000/book/detailsbook") else {
             
             print("not found")
             
