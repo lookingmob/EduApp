@@ -14,25 +14,18 @@ struct TextScannerView: View {
     
     var body: some View {
         VStack {
-            let image = AsyncImage(url: URL(string: "hihi.jpg")!)
-            
-//            { uiImage in
-//                self.uiImage = uiImage
-//            }
-//            { image in
-//                    image.resizable()
-//                }
-            
-            Image("pdficon")
-                .resizable()
-                .scaledToFit()
-                .onTapGesture {
-                    self.recognizeTextFromImage()
-                }
-
-            Text(recognizedText)
-                .font(.title)
-        }
+//             Image("Image 2")
+//                 .resizable()
+//                 .scaledToFit()
+//                 .onTapGesture {
+//                     self.recognizeTextFromImage()
+//                     self.compareStrings()
+//                 }
+             Text(recognizedText)
+                 .font(.title)
+            //Button(action: compareStrings, label: "split")
+         }
+        
     }
 
     private func recognizeTextFromImage() {
@@ -68,7 +61,6 @@ struct TextScannerView: View {
                 self.recognizedText = textResult.topCandidates(1).first?.string ?? ""
             }
         }
-
         // 6. Perform the text recognition request
         do {
             try requestHandler.perform([textRecognitionRequest])

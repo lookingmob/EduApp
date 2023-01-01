@@ -49,8 +49,8 @@ struct MapView: UIViewRepresentable {
 
       // add a new pin to the map at the location
       let pin = MKPointAnnotation()
-      //  pin.coordinate = location
- //     mapView.addAnnotation(pin)
+//        pin.coordinate = location.unsafelyUnwrapped
+//      mapView.addAnnotation(pin)
     }
   }
 }

@@ -30,11 +30,41 @@ class WelcomeViewController: UIViewController {
         UNUserNotificationCenter.current().add(req , withCompletionHandler: nil)
     }
     
+ func compareStrings(){
+     var count = 0
+        let string = "chiaii::acioajci - dfdfs *ds f::ddf / *- _::_:-"
+     let secondstring = "chicaii::acioajci - df::dfs *ds f::ddf / *- _::_:-"
+
+        let components = string.components(separatedBy: "::")
+        let secondcomponents = secondstring.components(separatedBy: "::")
+        print(components)
+        print(secondcomponents)
+
+     for i in 0..<min(components.count, secondcomponents.count) {
+         if components[i] != secondcomponents[i] {
+             count += 1
+         }
+     }
+
+     if components.count > secondcomponents.count {
+         count += components.count - secondcomponents.count
+     } else if secondcomponents.count > components.count {
+         count += secondcomponents.count - components.count
+     }
+
+     print("Number of different elements: \(count)")
+     
+     
+     // prints "Number of different elements: 1"
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
            let center = UNUserNotificationCenter.current()
         self.send()
+        print("    ")
+        self.compareStrings()
             }
            }
 
