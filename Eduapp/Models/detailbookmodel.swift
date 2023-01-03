@@ -19,8 +19,9 @@ struct detailbookmodel:Identifiable,Codable, Hashable{
 var degre: String
     var pdf: String
     var rating: Int
- 
-    init(id: String , bookname:String , authname:String , edition: String, degre: String,pdf: String, rating: Int) {
+    var reviews:[String]
+    var totalrating:String
+    init(id: String , bookname:String , authname:String , edition: String, degre: String,pdf: String, rating: Int,totalrating:String , reviews:[String]) {
 
         self.id = id
         self.bookname = bookname
@@ -29,6 +30,8 @@ var degre: String
         self.degre = degre
         self.pdf = pdf
         self.rating = rating
+        self.totalrating = totalrating
+        self.reviews = reviews
     }
 
     enum CodingKeys:String, CodingKey{
@@ -39,6 +42,8 @@ var degre: String
         case degre
         case pdf
         case rating
+        case reviews
+        case totalrating
     }
     struct detailbookmodel:Codable{
         let books:[Book]

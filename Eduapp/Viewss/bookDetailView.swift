@@ -144,7 +144,7 @@ struct bookDetail: View {
 
                                                     
 
-                                                    ForEach(1..<6){_ in
+                            ForEach(1..<((resto.rating) ?? 0)+1){_ in
 
                                                         
 

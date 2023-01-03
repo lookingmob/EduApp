@@ -148,10 +148,12 @@
 		61E94A852954BE6300B9CD13 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E94A842954BE6300B9CD13 /* ProductRow.swift */; };
 		61E94A872954BF8400B9CD13 /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E94A862954BF8400B9CD13 /* CartButton.swift */; };
 		61FC79932963930300E6D56C /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC79922963930300E6D56C /* SideMenuModel.swift */; };
-		61FC79A22963A14700E6D56C /* MainUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC79A12963A14700E6D56C /* MainUIViewController.swift */; };
+		61FC79A22963A14700E6D56C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC79A12963A14700E6D56C /* MainViewController.swift */; };
 		61FC79A42963A24400E6D56C /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC79A32963A24400E6D56C /* SideMenuViewController.swift */; };
 		61FC79A72963A2D900E6D56C /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61FC79A52963A2D900E6D56C /* SideMenuCell.xib */; };
 		61FC79A82963A2D900E6D56C /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC79A62963A2D900E6D56C /* SideMenuCell.swift */; };
+		61FC79AA2963AE8E00E6D56C /* HomeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC79A92963AE8E00E6D56C /* HomeeViewController.swift */; };
+		61FC79AE2963C57B00E6D56C /* ScanResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC79AD2963C57B00E6D56C /* ScanResponder.swift */; };
 		7C02BA07854FB30558B4CEAE /* Pods_Eduapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077CB0B473DF5345BF0584E6 /* Pods_Eduapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -303,10 +305,12 @@
 		61E94A842954BE6300B9CD13 /* ProductRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		61E94A862954BF8400B9CD13 /* CartButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
 		61FC79922963930300E6D56C /* SideMenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
-		61FC79A12963A14700E6D56C /* MainUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUIViewController.swift; sourceTree = "<group>"; };
+		61FC79A12963A14700E6D56C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		61FC79A32963A24400E6D56C /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		61FC79A52963A2D900E6D56C /* SideMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
 		61FC79A62963A2D900E6D56C /* SideMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
+		61FC79A92963AE8E00E6D56C /* HomeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeeViewController.swift; sourceTree = "<group>"; };
+		61FC79AD2963C57B00E6D56C /* ScanResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanResponder.swift; sourceTree = "<group>"; };
 		803554A52EDC837343D6D364 /* Pods-Eduapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eduapp.release.xcconfig"; path = "Target Support Files/Pods-Eduapp/Pods-Eduapp.release.xcconfig"; sourceTree = "<group>"; };
 		80A9CE9D52D730B70F2273C2 /* Pods-Eduapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eduapp.debug.xcconfig"; path = "Target Support Files/Pods-Eduapp/Pods-Eduapp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -382,6 +386,7 @@
 				61D0D88A295E2BB500726CB2 /* BiometricViewController.swift */,
 				61D70DF1295F45870031390E /* RatingModelView.swift */,
 				61D70DF3295F46A60031390E /* Rating.swift */,
+				61FC79AD2963C57B00E6D56C /* ScanResponder.swift */,
 			);
 			path = Viewss;
 			sourceTree = "<group>";
@@ -592,9 +597,10 @@
 		61FC79A02963A0C100E6D56C /* sidemenu */ = {
 			isa = PBXGroup;
 			children = (
+				61FC79A92963AE8E00E6D56C /* HomeeViewController.swift */,
 				61FC79A62963A2D900E6D56C /* SideMenuCell.swift */,
 				61FC79A52963A2D900E6D56C /* SideMenuCell.xib */,
-				61FC79A12963A14700E6D56C /* MainUIViewController.swift */,
+				61FC79A12963A14700E6D56C /* MainViewController.swift */,
 				61FC79A32963A24400E6D56C /* SideMenuViewController.swift */,
 			);
 			path = sidemenu;
@@ -770,6 +776,7 @@
 				61D70DF4295F46A60031390E /* Rating.swift in Sources */,
 				61330CAB29520AA4001D70F4 /* BooksView.swift in Sources */,
 				61A6DE072932B67B00AAE146 /* DocumentPicker.swift in Sources */,
+				61FC79AA2963AE8E00E6D56C /* HomeeViewController.swift in Sources */,
 				6109DEF72943EDE300915A80 /* TableViewHelper.swift in Sources */,
 				619FD5D829456FAA009C0600 /* EndQuizoView.swift in Sources */,
 				61330CB129520AC9001D70F4 /* bookPickerView.swift in Sources */,
@@ -790,7 +797,8 @@
 				61E94A872954BF8400B9CD13 /* CartButton.swift in Sources */,
 				6197E9692944EE8000CDB415 /* ContenttView.swift in Sources */,
 				619FD5D629456FAA009C0600 /* QuizListTableViewController.swift in Sources */,
-				61FC79A22963A14700E6D56C /* MainUIViewController.swift in Sources */,
+				61FC79A22963A14700E6D56C /* MainViewController.swift in Sources */,
+				61FC79AE2963C57B00E6D56C /* ScanResponder.swift in Sources */,
 				61330CBB29520AE6001D70F4 /* QuizView.swift in Sources */,
 				6157053A293E32DD00309246 /* booksModels.swift in Sources */,
 				61A6DE082932B67B00AAE146 /* DocumentView.swift in Sources */,

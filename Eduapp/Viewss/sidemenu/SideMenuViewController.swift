@@ -6,7 +6,6 @@
 //
 
 import UIKit
-
 protocol SideMenuViewControllerDelegate {
     func selectedCell(_ row: Int)
 }

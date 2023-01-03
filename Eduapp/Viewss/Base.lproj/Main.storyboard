@@ -1547,10 +1547,10 @@
             </objects>
             <point key="canvasLocation" x="-2347" y="-239"/>
         </scene>
-        <!--View Controller-->
+        <!--Side Menu View Controller-->
         <scene sceneID="lKc-eD-nth">
             <objects>
-                <viewController id="mZ1-12-Vhu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SideMenuID" id="mZ1-12-Vhu" customClass="SideMenuViewController" customModule="Eduapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="glL-33-ilC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1616,6 +1616,11 @@
                         </constraints>
                     </view>
                     <size key="freeformSize" width="320" height="896"/>
+                    <connections>
+                        <outlet property="footerLabel" destination="5ma-Zg-p2k" id="gZU-vN-OnR"/>
+                        <outlet property="headerImageView" destination="6Ao-QT-BHJ" id="YVe-Q3-iAk"/>
+                        <outlet property="sideMenuTableView" destination="gdE-6t-26w" id="jxK-Vc-b76"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l6i-Zu-8Hi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1934,10 +1939,10 @@
             </objects>
             <point key="canvasLocation" x="-1115" y="-2853"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Homee View Controller-->
         <scene sceneID="69c-H3-dGI">
             <objects>
-                <viewController id="Job-1c-ZNN" customClass="HomeViewController" customModule="Eduapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Job-1c-ZNN" customClass="HomeeViewController" customModule="Eduapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bwB-a7-trJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1985,6 +1990,9 @@
                     <navigationItem key="navigationItem" id="PID-ow-392">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="line.3.horizontal" catalog="system" id="h5f-GL-N8H"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="sideMenuBtn" destination="h5f-GL-N8H" id="lNq-97-6mY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SjL-8I-0cE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2005,6 +2013,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="loB-Gw-uFj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1497" y="-3539"/>
+        </scene>
+        <!--Scan Responder-->
+        <scene sceneID="0NW-ws-yDV">
+            <objects>
+                <viewController storyboardIdentifier="ScanResponder" id="pwV-7y-xrp" customClass="ScanResponder" customModule="Eduapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QBP-if-EnB">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Jf9-LL-mCA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TUX-u5-TJm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1544" y="-5052"/>
         </scene>
         <!--Addquiz View Controller-->
         <scene sceneID="Ds9-jQ-ueg">
@@ -2548,7 +2571,7 @@
         <!--menu-->
         <scene sceneID="Psg-RD-cRo">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eDi-Rf-dct" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="HomeNavID" automaticallyAdjustsScrollViewInsets="NO" id="eDi-Rf-dct" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="menu" image="list.dash" catalog="system" id="AiO-F1-kLp"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6uV-2W-BOy">

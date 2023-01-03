@@ -39,7 +39,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // if user isn't logged in
         // instantiate the navigation controller and set it as root view controller
         // using the storyboard identifier we set earlier
-    let loginNavController = storyboard.instantiateViewController(identifier: "ViewController")
+    let loginNavController = storyboard.instantiateViewController(identifier: "ScanResponderra")
      //  let loginNavController = storyboard.instantiateViewController(identifier: "QuizlistView")
 
             
