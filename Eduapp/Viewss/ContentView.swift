@@ -12,12 +12,14 @@ import FirebaseCore
 
 struct ContentView: View {
     @State var search = ""
+    @State private var colorScheme: ColorScheme = .light
     @State var index = 0
     @State var books :Book
     @StateObject var cartManager = CartManager()
     //  @State var columns = Array(repeating: GridItem(.flexible(),  spacing: 15),count: 2)
     @ObservedObject var booksviewmodel = bookViewModel()
     var body: some View {
+       
         NavigationView {
             
             ScrollView(.vertical, showsIndicators:  false){
@@ -67,6 +69,16 @@ struct ContentView: View {
                             .fontWeight(.bold)
                         Spacer()
                         HStack{
+                            SimplyDarkModeApp()
+//                            .toolbar{
+//                                ToolbarItem(placement: ToolbarItemPlacement.navigationBarTrailing){
+//                                    Button(action: {}, label: {
+//                                        isDark ? Label("Dark",systemImage: "lightbulb.fill"):
+//                                        Label("Dark",systemImage: "lightbulb.fill")
+//
+//                                    })
+//
+//                                }}
                             //                        Button {
                             
                             //                        }

@@ -10,21 +10,32 @@ import Vision
 
 struct TextScannerView: View {
     @State private var recognizedText: String = ""
+    @State private var colorScheme: ColorScheme = .light
     @State private var uiImage:UIImage?
     
     var body: some View {
         VStack {
-//             Image("Image 2")
-//                 .resizable()
-//                 .scaledToFit()
-//                 .onTapGesture {
-//                     self.recognizeTextFromImage()
-//                     self.compareStrings()
-//                 }
-             Text(recognizedText)
-                 .font(.title)
-            //Button(action: compareStrings, label: "split")
-         }
+            //             Image("Image 2")
+            //                 .resizable()
+            //                 .scaledToFit()
+            //                 .onTapGesture {
+            //                     self.recognizeTextFromImage()
+            //                     self.compareStrings()
+            //                 }
+            Text(recognizedText)
+                .font(.title)
+            
+            Button(action: {
+                if self.colorScheme == .light {
+                    self.colorScheme = .dark
+                } else {
+                    self.colorScheme = .light
+                }
+            }) {
+                Text("Toggle Color Scheme")
+            }
+            
+        }
         
     }
 

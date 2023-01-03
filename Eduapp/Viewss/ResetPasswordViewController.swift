@@ -32,28 +32,3 @@ class ResetPasswordViewController: UIViewController {
         super.viewDidLoad()
     }
 }
-/*
- http//2345.126345.12.12:124/user/changePassword
- {
- "email": "islem.naffal-gmail.co"
- "password" : "1234567"
- "newPassword" : "1234567"
- }
- 
- */
-
-
-//success({
-//    user =     {
-//        "__v" = 0;
-//        "_id" = 638581f10a4f23431f5396b7;
-//        createdAt = "2022-11-29T03:52:17.652Z";
-//        email = "ala.gharbi@esprit.tn";
-//        otpCode = 6745;
-//        password = "$2b$10$.qIql12rboVC.8ryR0WYP.iSZzFD/rPMYh7N/uc58fbFGITALsqfG";
-//        role = user;
-//        updatedAt = "2022-11-29T04:11:00.647Z";
-//        username = tigana;
-//    };
-//})
-//---

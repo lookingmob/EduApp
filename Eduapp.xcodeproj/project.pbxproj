@@ -133,6 +133,7 @@
 		61AA0AD929485CC40094599B /* CUserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AA0AD829485CC40094599B /* CUserTableViewController.swift */; };
 		61ABED262937EF5800712D46 /* Quizz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ABED252937EF5800712D46 /* Quizz.swift */; };
 		61ABED282938057400712D46 /* QuizService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ABED272938057400712D46 /* QuizService.swift */; };
+		61ACFB44296303F10018903F /* SimplyDarkModeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ACFB43296303F10018903F /* SimplyDarkModeApp.swift */; };
 		61B1ABF8293ABB4500AB18BE /* QuizRessponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B1ABF7293ABB4500AB18BE /* QuizRessponse.swift */; };
 		61C51C9A2954DF21001786B6 /* ScanData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C51C992954DF21001786B6 /* ScanData.swift */; };
 		61D0D88B295E2BB500726CB2 /* BiometricViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D0D88A295E2BB500726CB2 /* BiometricViewController.swift */; };
@@ -146,6 +147,11 @@
 		61E94A832954BE2200B9CD13 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E94A822954BE2200B9CD13 /* CartView.swift */; };
 		61E94A852954BE6300B9CD13 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E94A842954BE6300B9CD13 /* ProductRow.swift */; };
 		61E94A872954BF8400B9CD13 /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E94A862954BF8400B9CD13 /* CartButton.swift */; };
+		61FC79932963930300E6D56C /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC79922963930300E6D56C /* SideMenuModel.swift */; };
+		61FC79A22963A14700E6D56C /* MainUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC79A12963A14700E6D56C /* MainUIViewController.swift */; };
+		61FC79A42963A24400E6D56C /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC79A32963A24400E6D56C /* SideMenuViewController.swift */; };
+		61FC79A72963A2D900E6D56C /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61FC79A52963A2D900E6D56C /* SideMenuCell.xib */; };
+		61FC79A82963A2D900E6D56C /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC79A62963A2D900E6D56C /* SideMenuCell.swift */; };
 		7C02BA07854FB30558B4CEAE /* Pods_Eduapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077CB0B473DF5345BF0584E6 /* Pods_Eduapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -282,6 +288,7 @@
 		61AA0AD829485CC40094599B /* CUserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CUserTableViewController.swift; path = Eduapp/Viewss/CUserTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		61ABED252937EF5800712D46 /* Quizz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quizz.swift; sourceTree = "<group>"; };
 		61ABED272938057400712D46 /* QuizService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizService.swift; sourceTree = "<group>"; };
+		61ACFB43296303F10018903F /* SimplyDarkModeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplyDarkModeApp.swift; sourceTree = "<group>"; };
 		61B1ABF7293ABB4500AB18BE /* QuizRessponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizRessponse.swift; sourceTree = "<group>"; };
 		61C51C992954DF21001786B6 /* ScanData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanData.swift; sourceTree = "<group>"; };
 		61D0D88A295E2BB500726CB2 /* BiometricViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricViewController.swift; sourceTree = "<group>"; };
@@ -295,6 +302,11 @@
 		61E94A822954BE2200B9CD13 /* CartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		61E94A842954BE6300B9CD13 /* ProductRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		61E94A862954BF8400B9CD13 /* CartButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
+		61FC79922963930300E6D56C /* SideMenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
+		61FC79A12963A14700E6D56C /* MainUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUIViewController.swift; sourceTree = "<group>"; };
+		61FC79A32963A24400E6D56C /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		61FC79A52963A2D900E6D56C /* SideMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
+		61FC79A62963A2D900E6D56C /* SideMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
 		803554A52EDC837343D6D364 /* Pods-Eduapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eduapp.release.xcconfig"; path = "Target Support Files/Pods-Eduapp/Pods-Eduapp.release.xcconfig"; sourceTree = "<group>"; };
 		80A9CE9D52D730B70F2273C2 /* Pods-Eduapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eduapp.debug.xcconfig"; path = "Target Support Files/Pods-Eduapp/Pods-Eduapp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -326,6 +338,7 @@
 		61330C7A29520A18001D70F4 /* Viewss */ = {
 			isa = PBXGroup;
 			children = (
+				61FC79A02963A0C100E6D56C /* sidemenu */,
 				610C773F2954E85500A4A5CA /* scanner */,
 				61E94A822954BE2200B9CD13 /* CartView.swift */,
 				61E94A7829549D2E00B9CD13 /* addbookView.swift */,
@@ -388,6 +401,7 @@
 				61330CA629520A5F001D70F4 /* AnswerRow.swift */,
 				61330CA129520A5F001D70F4 /* textimagebuttonView.swift */,
 				61E94A7A2954AD4700B9CD13 /* PaymentButton.swift */,
+				61ACFB43296303F10018903F /* SimplyDarkModeApp.swift */,
 			);
 			path = Composant;
 			sourceTree = "<group>";
@@ -493,6 +507,7 @@
 		61A519AC292E867900439AD3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				61FC79922963930300E6D56C /* SideMenuModel.swift */,
 				61A519AD292E867900439AD3 /* UserPassrest.swift */,
 				61A519AE292E867900439AD3 /* UserProfileversion.swift */,
 				61A519AF292E867900439AD3 /* UserLoginJson.swift */,
@@ -572,6 +587,17 @@
 				61A6DE062932B67B00AAE146 /* DocumentBrowserViewController.swift */,
 			);
 			path = pdf;
+			sourceTree = "<group>";
+		};
+		61FC79A02963A0C100E6D56C /* sidemenu */ = {
+			isa = PBXGroup;
+			children = (
+				61FC79A62963A2D900E6D56C /* SideMenuCell.swift */,
+				61FC79A52963A2D900E6D56C /* SideMenuCell.xib */,
+				61FC79A12963A14700E6D56C /* MainUIViewController.swift */,
+				61FC79A32963A24400E6D56C /* SideMenuViewController.swift */,
+			);
+			path = sidemenu;
 			sourceTree = "<group>";
 		};
 		7A3EF01DDD88B38CF2A1C22A /* Frameworks */ = {
@@ -670,6 +696,7 @@
 				61A519FA292E881C00439AD3 /* Assets.xcassets in Resources */,
 				615635F729562EA4007569CC /* Main.storyboard in Resources */,
 				61A1CA4C2955FCD900B221C5 /* GoogleService-Info.plist in Resources */,
+				61FC79A72963A2D900E6D56C /* SideMenuCell.xib in Resources */,
 				61A519AA292E864600439AD3 /* SF-Pro-Text-Bold.ttf in Resources */,
 				614C54C5292EBB800069B64D /* hihi.pdf in Resources */,
 				61A519A8292E864600439AD3 /* SF-Pro-Text-Medium.ttf in Resources */,
@@ -763,6 +790,7 @@
 				61E94A872954BF8400B9CD13 /* CartButton.swift in Sources */,
 				6197E9692944EE8000CDB415 /* ContenttView.swift in Sources */,
 				619FD5D629456FAA009C0600 /* QuizListTableViewController.swift in Sources */,
+				61FC79A22963A14700E6D56C /* MainUIViewController.swift in Sources */,
 				61330CBB29520AE6001D70F4 /* QuizView.swift in Sources */,
 				6157053A293E32DD00309246 /* booksModels.swift in Sources */,
 				61A6DE082932B67B00AAE146 /* DocumentView.swift in Sources */,
@@ -790,6 +818,7 @@
 				61330CD329520B40001D70F4 /* bookaddbookViewController.swift in Sources */,
 				61A51987292E85C600439AD3 /* AppDelegate.swift in Sources */,
 				61330CB429520AD3001D70F4 /* AnswerRow.swift in Sources */,
+				61FC79A42963A24400E6D56C /* SideMenuViewController.swift in Sources */,
 				61A5FB86294658B2007C4EBE /* BookItm.swift in Sources */,
 				61330CB629520AD9001D70F4 /* WelcomeViewController.swift in Sources */,
 				61330CC829520B1A001D70F4 /* QuizTestViewController.swift in Sources */,
@@ -798,6 +827,7 @@
 				61A51991292E85C600439AD3 /* Eduapp.xcdatamodeld in Sources */,
 				619FD5DB29456FAA009C0600 /* QuizDetailViewController.swift in Sources */,
 				61330CB929520AE2001D70F4 /* EditPasswordView.swift in Sources */,
+				61ACFB44296303F10018903F /* SimplyDarkModeApp.swift in Sources */,
 				61ABED262937EF5800712D46 /* Quizz.swift in Sources */,
 				61E94A852954BE6300B9CD13 /* ProductRow.swift in Sources */,
 				61330CC629520B12001D70F4 /* UITABBARVViewController.swift in Sources */,
@@ -805,6 +835,7 @@
 				6109DEEF2943EB3300915A80 /* Message.swift in Sources */,
 				61330CCB29520B27001D70F4 /* HomePageSwiftUIView.swift in Sources */,
 				61A6DE0A2932B67B00AAE146 /* PDFComponent.swift in Sources */,
+				61FC79932963930300E6D56C /* SideMenuModel.swift in Sources */,
 				61330CB329520AD0001D70F4 /* ProgressBar.swift in Sources */,
 				61330CC529520B0F001D70F4 /* TabBarViewController.swift in Sources */,
 				6109DEED2943EABC00915A80 /* Utilisateur.swift in Sources */,
@@ -837,6 +868,7 @@
 				61B1ABF8293ABB4500AB18BE /* QuizRessponse.swift in Sources */,
 				619FD5D929456FAA009C0600 /* QuizIntroSwiftUIView.swift in Sources */,
 				61A5FB84294653A0007C4EBE /* ModelBookView.swift in Sources */,
+				61FC79A82963A2D900E6D56C /* SideMenuCell.swift in Sources */,
 				6172158429396E400005B973 /* QuizzBrain.swift in Sources */,
 				6109DEF92943EE5500915A80 /* Extentions.swift in Sources */,
 				61E94A7929549D2E00B9CD13 /* addbookView.swift in Sources */,
